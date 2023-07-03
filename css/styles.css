@@ -8,10 +8,58 @@
    --cornflower: #e7e9fc;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+ul,
+ol {
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-left: 0;
+}
+
+img {
+   display: block;
+}
+
 body {
    font-family: 'Roboto', sans-serif;
    color: var(--slate);
    background-color: var(--white);
+}
+
+.container {
+   width: 100%;
+   max-width: 1158px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin: 0 auto;
+}
+
+.list {
+   list-style: none;
+}
+
+.link {
+   text-decoration: none;
+}
+
+.link:link {
+   text-decoration: none;
+}
+
+/**--------- HEADER ---------*/
+.header {
+   padding-top: 24px;
+   padding-bottom: 24px;
 }
 
 .logo {
@@ -29,16 +77,26 @@ body {
    color: var(--navyblue);
 }
 
-.link {
-   text-decoration: none;
+.header-coutainer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
 
-.link:link {
-   text-decoration: none;
+.header-navigation {
+   display: flex;
+   align-items: center;
+   gap: 76px;
 }
 
-.list {
-   list-style: none;
+.header-menu {
+   display: flex;
+   gap: 40px;
+}
+
+.header-socials {
+   display: flex;
+   gap: 40px;
 }
 
 .nav-link {
@@ -77,8 +135,13 @@ address {
    color: var(--ocean);
 }
 
+/**------ MAIN ---------*/
+
+/** -------- SECTION-1 -------- */
+
 .main-section {
    background-color: var(--navyblue);
+   padding: 188px 0;
 }
 
 .main-text {
@@ -88,6 +151,7 @@ address {
    font-weight: 700;
    line-height: 1.07;
    letter-spacing: 0.02em;
+   margin-bottom: 48px;
 }
 
 .order-button {
@@ -99,11 +163,27 @@ address {
    line-height: 1.5;
    letter-spacing: 0.04em;
    cursor: pointer;
+
+   display: flex;
+   padding: 16px 32px;
+   margin: 0 auto;
+
+   border-radius: 4px;
+   background: var(--iris, #4d5ae5);
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .order-button:hover,
 .order-button:focus {
    background-color: var(--ocean);
+}
+
+/** -------- SECTION-2 -------- */
+
+.section-skills {
+   padding-top: 120px;
+   display: flex;
+   gap: 24px;
 }
 
 .main-skills-head {
@@ -112,6 +192,7 @@ address {
    font-size: 20px;
    line-height: 1.2;
    letter-spacing: 0.02em;
+   padding-bottom: 8px;
 }
 
 .main-skills-text {
@@ -119,6 +200,8 @@ address {
    line-height: 1.5;
    letter-spacing: 0.02em;
 }
+
+/**----------- SECTION-3 -----------*/
 
 .section-jobs {
    color: var(--navyblue);
@@ -128,10 +211,22 @@ address {
    letter-spacing: 0.02em;
    text-align: center;
    text-transform: capitalize;
+   padding-top: 120px;
+   padding-bottom: 72px;
 }
+
+.jobs-list {
+   display: flex;
+   gap: 24px;
+   padding-bottom: 120px;
+}
+
+/**----------- SECTION-4 -----------*/
 
 .main-team {
    background: var(--cloud, #f4f4fd);
+   padding-top: 120px;
+   padding-bottom: 120px;
 }
 
 .section-team {
@@ -142,10 +237,21 @@ address {
    letter-spacing: 0.02em;
    text-transform: capitalize;
    text-align: center;
+   padding-bottom: 72px;
+}
+
+.team-list {
+   display: flex;
+   gap: 24px;
 }
 
 .list-item {
    background-color: var(--white);
+   border-radius: 0px 0px 4px 4px;
+   background: var(--white, #fff);
+   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .worker-list {
@@ -155,6 +261,8 @@ address {
    line-height: 1.2;
    letter-spacing: 0.02em;
    font-weight: 500;
+   padding-top: 32px;
+   margin-bottom: 8px;
 }
 
 .worker-text {
@@ -162,10 +270,15 @@ address {
    font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
+   padding-bottom: 32px;
 }
+
+/** ----------FOOTER----------- */
 
 footer {
    background: var(--navyblue);
+   padding-top: 100px;
+   padding-bottom: 100px;
 }
 
 .footer-text {
@@ -173,13 +286,15 @@ footer {
    font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
+   margin-top: 16px;
+   width: 264px;
 }
 
 .logo-footer {
    color: var(--cloud);
 }
 
-/* Page of portfolio */
+/**------ PORTFOLIO PAGE ----------**/
 
 .buttons {
    font-family: 'Roboto', sans-serif;
