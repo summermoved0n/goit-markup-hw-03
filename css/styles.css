@@ -315,9 +315,7 @@ footer {
    margin: 0 auto;
    padding-top: 96px;
    padding-bottom: 72px;
-   width: 100%;
-   align-items: center;
-   max-width: 586px;
+   justify-content: center;
 }
 
 .buttons {
