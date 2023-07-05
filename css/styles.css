@@ -83,7 +83,7 @@ body {
    text-transform: uppercase;
    text-decoration: none;
    line-height: 1.17;
-   /* margin-right: 76px; */
+   margin-right: 76px;
 }
 
 .logo-text {
@@ -99,7 +99,6 @@ body {
 .header-navigation {
    display: flex;
    align-items: center;
-   gap: 76px;
    padding-top: 24px;
    padding-bottom: 24px;
 }
@@ -319,6 +318,7 @@ footer {
 .footer-link {
    display: inline-block;
    margin-bottom: 16px;
+   margin-right: 0;
 }
 
 .footer-text {
