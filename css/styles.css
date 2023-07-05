@@ -71,10 +71,7 @@ body {
 
 /**--------- HEADER ---------*/
 .header {
-   padding-top: 24px;
-   padding-bottom: 24px;
    border-bottom: 1px solid var(--cornflower, #e7e9fc);
-   background: var(--white, #fff);
 }
 
 .logo {
@@ -86,7 +83,7 @@ body {
    text-transform: uppercase;
    text-decoration: none;
    line-height: 1.17;
-   margin-right: 76px;
+   /* margin-right: 76px; */
 }
 
 .logo-text {
@@ -103,6 +100,8 @@ body {
    display: flex;
    align-items: center;
    gap: 76px;
+   padding-top: 24px;
+   padding-bottom: 24px;
 }
 
 .header-menu {
@@ -387,7 +386,6 @@ footer {
    padding: 32px 16px;
    border: 1px solid var(--cornflower, #e7e9fc);
    border-top: none;
-   margin-bottom: 8px;
 }
 
 .main-portfolio {
